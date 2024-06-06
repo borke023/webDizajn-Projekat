@@ -1,0 +1,140 @@
+@media (max-width: 576px) {
+  .navigacija {
+    width: 100vw;
+  }
+
+  .navigacioni-meni {
+    display: none;
+  }
+
+  .navigacioni-meni.prikazi {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: 1000;
+    background-color: #161616;
+  }
+
+  .kontejner-flex {
+    margin: auto;
+    width: 100%;
+  }
+
+  .hamburger-menu-ikonica {
+    display: block;
+    position: relative;
+    padding: 10px;
+    z-index: 10000;
+  }
+
+  .veliki-naslov {
+    font-size: 2rem;
+  }
+  .podnaslov {
+    font-size: 1.2rem;
+  }
+
+  .naslov-sekcije {
+    font-size: 2rem;
+  }
+
+  .podnaslov-onama {
+    font-size: 1.2rem;
+  }
+
+  .kolone {
+    flex-direction: column;
+  }
+
+  .kolona-1 {
+    padding: 10px 10px;
+    align-items: center;
+  }
+
+  .kolona-2 {
+    margin-top: 60px;
+  }
+
+  .kolona-2 img {
+    width: 100%;
+  }
+
+  .footer-glavni {
+    flex-direction: column;
+    align-items: start;
+    padding-bottom: 40px;
+  }
+
+  .kontakt-info {
+    text-align: left;
+    padding-bottom: 30px;
+    margin-bottom: 30px;
+    border-bottom: 1px solid #414141;
+  }
+
+  .grid-omotac {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(9, 1fr);
+    grid-template-areas:
+      "slika1"
+      "slika2"
+      "slika3"
+      "slika4"
+      "slika5"
+      "slika6"
+      "slika7"
+      "slika8"
+      "slika9";
+    grid-row-gap: 20px;
+  }
+
+  .usluge-kartica-grid {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .usluge-kartica {
+    height: auto;
+  }
+
+  .usluge-slika {
+    height: 250px;
+    border-bottom-left-radius: 0px;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+  }
+
+  .usluge-slika img {
+    border-bottom-left-radius: 0px;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+  }
+
+  .usluge-text.obrnuto {
+    order: 2;
+  }
+
+  .usluge-slika.obrnuto {
+    order: 1;
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 0px;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 0px;
+  }
+
+  .usluge-slika.obrnuto img {
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 0px;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 0px;
+  }
+
+  .usluge-text {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+}

@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="phone.css" />
+    <link rel="icon" href="assets/logo.png" type="image/x-icon" />
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css" />
+    <title>O meni | Fotograf Srbija</title>
+  </head>
+  <body>
+    <nav class="navigacija">
+      <div class="kontejner-flex">
+        <div class="logo">
+          <a href="index.html" class="logo-link">
+            <img src="assets/logo.png" alt="Logo kompanije" />
+          </a>
+        </div>
+        <div class="hamburger-menu-ikonica">
+          <img src="assets/menu.png" alt="hamburger-meni-ikonica" />
+        </div>
+        <div class="navigacioni-meni">
+          <a href="index.html" class="navigacioni-link">Pocetna</a>
+          <a href="omeni.html" class="navigacioni-link">O meni</a>
+          <a href="usluge.html" class="navigacioni-link">Usluge</a>
+          <a href="kontakt.html" class="navigacioni-link">Kontakt</a>
+        </div>
+      </div>
+    </nav>
+    <section id="kontakt-forma">
+      <div class="container mt-5">
+        <div class="row">
+          <div class="col-md-6">
+            <form id="forma" action="https://formsubmit.co/cb70a087dd8556989b192a19715513c6" method="POST">
+              <div class="mb-3">
+                <label for="ime" class="form-label">Ime</label>
+                <input
+                  name="ime"
+                  type="text"
+                  class="form-control"
+                  id="ime"
+                  placeholder="Vase ime"
+                  required
+                  maxlength="30"
+                  pattern=".{1,30}"
+                />
+              </div>
+              <div class="mb-3">
+                <label for="prezime" class="form-label">Prezime</label>
+                <input
+                name="prezime"
+                  type="text"
+                  class="form-control"
+                  id="prezime"
+                  placeholder="Vase prezime"
+                  required
+                  maxlength="30"
+                  pattern=".{1,30}"
+                />
+              </div>
+              <div class="mb-3">
+                <label for="email" class="form-label">Email</label>
+                <input
+                name="email"
+                  type="email"
+                  class="form-control"
+                  id="email"
+                  placeholder="Vasa email adresa"
+                  required
+                />
+              </div>
+              <div class="mb-3">
+                <label for="telefon" class="form-label">Broj telefona</label>
+                <input
+                name="telefon"
+                  type="text"
+                  class="form-control"
+                  id="telefon"
+                  placeholder="Vas broj telefona mora imati od 10 do 13 karaktera"
+                  pattern=".{10,13}"
+                  required
+                />
+              </div>
+              <div class="mb-3">
+                <label for="datum-rodj" class="form-label"
+                  >Datum rodjenja</label
+                >
+                <input
+                name="datum-rodj"
+                  type="date"
+                  class="form-control"
+                  id="datum-rodj"
+                  required
+                />
+              </div>
+          </div>
+          <div class="col-md-6">
+              <div class="mb-3">
+                <label for="poruka" class="form-label">Poruka za nas</label>
+                <textarea
+                name="poruka"
+                  class="form-control"
+                  id="poruka"
+                  rows="15"
+                  placeholder="Unesite zeljenu poruku ovde!"
+                  required
+                  maxlength="300"
+                ></textarea>
+              </div>
+
+          </div>
+        </div>
+        <div class="text-center mt-4">
+          <button type="submit" id="posaljiDugme" class="btn btn-primary">Posalji</button>
+        </div>
+      </form>
+      </div>
+
+    </section>
+    <section id="footer">
+      <div class="kontejner">
+        <div class="footer-glavni">
+          <div class="kontakt-info">
+            <p>Broj telefona:</p>
+            <br />
+            <a href="tel:+381615260971">061-526-0971</a>
+            <br />
+            <p>Email:</p>
+            <br />
+            <a href="mailto:bulovan.boris@gmail.com">bulovan.boris@gmail.com</a>
+          </div>
+          <div class="footer-menu">
+            <a href="index.html" class="footer-link">Pocetna</a>
+            <a href="omeni.html" class="footer-link">O meni</a>
+            <a href="usluge.html" class="footer-link">Usluge</a>
+            <a href="kontakt.html" class="footer-link">Kontakt</a>
+          </div>
+        </div>
+        <div class="footer-pravni-tekst">
+          <p>Sva prava zadrzava Boris Bulovan &copy; 2024</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- servis koji mora da se koristi da bi forma zapravo radila -->
+    <script src="script.js"></script>
+  </body>
+</html>
